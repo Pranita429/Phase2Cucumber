@@ -1,5 +1,7 @@
 package stepdefs;
 
+
+
 import java.util.concurrent.TimeUnit;
 
 import org.junit.Assert;
@@ -36,7 +38,7 @@ public class LoginStepdef {
 
 	}
 
-	@When("I click on the Login Button")
+	@And("I click on the Login Button")
 	public void i_click_on_the_Login_Button() {
 	    
 		WebElement LoginBtn =driver.findElement(By.id("login-button"));
@@ -72,6 +74,8 @@ public class LoginStepdef {
 		String ExpError="Epic sadface: Username and password do not match any user in this service";
 		Assert.assertEquals(ExpError, ActError);
 
+		
+		
 	}
 
 
